@@ -10,7 +10,8 @@ import Newevent from './components/Newevent/index';
 // import Calendar from "./components/calendar/Calendar";
 import "./App.css";
 // import wastereduction from "./components/images/earthmonth.png";
-import MapContainer from './components/map/MapContainer';
+import Eventmap from './pages/Map/eventmap';
+import CreateEvent from './pages/createEvent/EventFormContainer';
 
 
 
@@ -28,11 +29,12 @@ class App extends Component {
             <div className="bg-dark text-white">
               <Switch>
                 <Route exact path="/" component={Mainpage} />
-                <Route exact path="/volunteer" component={Volunteer} />
+                <Route exact path="/calendar" component={Volunteer} />
                 <Route exact path="/contact" component={Contact} />
-                <Route exact path="/map" component={MapContainer} />
+                <Route exact path="/map" component={Eventmap} />
                 <Route exact path="/wastereduction" component={Wastereduction} />
                 <Route exact path="/events/:id" component={Newevent} />
+                <Route exact path="/createevent" component={CreateEvent} />
               </Switch>
             </div>
           </div>

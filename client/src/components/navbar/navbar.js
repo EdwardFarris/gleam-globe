@@ -11,7 +11,10 @@ export const Navbar=() => {
         <Link className="nav-link active navblack container" to="/">Home</Link>
       </li>
       <li className="nav-item">
-        <Link className="nav-link navblack" to="/volunteer">Volunteer</Link>
+        <Link className="nav-link navblack" to="/createevent">Create Event</Link>
+      </li>
+      <li className="nav-item">
+        <Link className="nav-link navblack" to="/calendar">Volunteer</Link>
       </li>
       <li className="nav-item">
         <Link className="nav-link navblack" to="/map">Map</Link>
