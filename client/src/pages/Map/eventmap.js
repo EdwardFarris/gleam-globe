@@ -11,7 +11,7 @@ export const Eventmap = ()  => {
         <React.Fragment>
           <div id='backgroundimage5' className="overlay"  style={{backgroundImage:`url(${mapImg})`}}></div>
           <div id="contentCard"><Card cardImage="mapImg" >
-          {/* <MapContainer /> */}
+          <MapContainer />
           </Card >
           </div>
           
