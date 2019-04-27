@@ -2,7 +2,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import logo from './logo.svg';
-import Eventmap from './pages/Map/eventmap';
 import Mainpage from './pages/Mainpage/main';
 import Volunteer from './pages/volunteer/volunteer';
 import Contact from './pages/contact/contact';
@@ -11,7 +10,7 @@ import Newevent from './components/Newevent/index';
 // import Calendar from "./components/calendar/Calendar";
 import "./App.css";
 // import wastereduction from "./components/images/earthmonth.png";
-// import MapContainer from './components/map/MapContainer';
+import MapContainer from './components/map/MapContainer';
 
 
 
@@ -31,7 +30,7 @@ class App extends Component {
                 <Route exact path="/" component={Mainpage} />
                 <Route exact path="/volunteer" component={Volunteer} />
                 <Route exact path="/contact" component={Contact} />
-                <Route exact path="/map" component={Eventmap} />
+                <Route exact path="/map" component={MapContainer} />
                 <Route exact path="/wastereduction" component={Wastereduction} />
                 <Route exact path="/events/:id" component={Newevent} />
               </Switch>
